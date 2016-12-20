@@ -1,0 +1,9 @@
+096f3c86c5a9e84f676558a5540ed642 *DESCRIPTION
+55ad34b4f34dcfd5896562797e4875ed *NAMESPACE
+5481394dd47fa9caaee3eb259d4258a0 *R/getLanguage.R
+358cdf8369ed88f082d776d3a2640cc5 *R/getSupportedLanguage.R
+0ac1cc5be5e7bbf6d163241ce974f86c *R/setApiKey.R
+05241b87e92519acdeac5f77442e8652 *R/utils.R
+6ac4d36afd74daf646da2979b1d52fda *man/getLanguage.Rd
+8a5f82ee45be17b2a4a60a7143b818fc *man/getSupportedLanguage.Rd
+462bc9ce7ceda5d9f5a30cb1910248c1 *man/setApiKey.Rd
