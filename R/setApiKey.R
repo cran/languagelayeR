@@ -1,15 +1,13 @@
-#'Set API Key
-#'
-#'Set your API key.
-#'
-#'Takes a character string containing your API key.
-#'@param apikey You can find your API key on your dashboard at \url{https://languagelayer.com/dashboard}.
-#'@export
-#'@examples
-#'setApiKey(apikey = "yourapikey")
+#' Deprecrated function
+#' 
+#' This function used to set API key for the whole session. Will be removed
+#' in the next version of the package.
+#' 
+#' @export
+#' 
 
-setApiKey <- function(apikey){
-  options(apikey = apikey)
+setApiKey <- function(){
+  message("This function is deprecated.")
 }
 
 

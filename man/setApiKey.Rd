@@ -2,20 +2,11 @@
 % Please edit documentation in R/setApiKey.R
 \name{setApiKey}
 \alias{setApiKey}
-\title{Set API Key}
+\title{Deprecrated function}
 \usage{
-setApiKey(apikey)
-}
-\arguments{
-\item{apikey}{You can find your API key on your dashboard at \url{https://languagelayer.com/dashboard}.}
+setApiKey()
 }
 \description{
-Set your API key.
+This function used to set API key for the whole session. Will be removed
+in the next version of the package.
 }
-\details{
-Takes a character string containing your API key.
-}
-\examples{
-setApiKey(apikey = "yourapikey")
-}
-
