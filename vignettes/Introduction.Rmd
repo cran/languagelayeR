@@ -36,6 +36,7 @@ devtools::install_github("ColinFay/languagelayeR")
 ## How languagelayeR works
 
 The version 1.1.0 works with two functions. Which are :  
+pkgdown::build_site(path = "inst/")
 
 * `get_lang` Get language information from a character string
 
