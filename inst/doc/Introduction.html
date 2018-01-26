@@ -12,7 +12,7 @@
 
 <meta name="author" content="Colin FAY" />
 
-<meta name="date" content="2018-01-05" />
+<meta name="date" content="2018-01-26" />
 
 <title>Introduction to languagelayeR</title>
 
@@ -280,26 +280,26 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">Introduction to languagelayeR</h1>
 <h4 class="author"><em>Colin FAY</em></h4>
-<h4 class="date"><em>2018-01-05</em></h4>
+<h4 class="date"><em>2018-01-26</em></h4>
 
 
 
-<section id="languagelayerr" class="level1">
+<div id="languagelayerr" class="section level1">
 <h1>languagelayerR</h1>
 <p>This package is designed to detect a language from a character string in R by acessing the languagelayer API — <a href="https://languagelayer.com/" class="uri">https://languagelayer.com/</a></p>
-<section id="language-layer-api" class="level2">
+<div id="language-layer-api" class="section level2">
 <h2>Language layer API</h2>
 <p>This package offers a language detection tool by connecting to the languagelayer API, a JSON interface designed to extract language information from a character string.</p>
-</section>
-<section id="install-languagelayerr" class="level2">
+</div>
+<div id="install-languagelayerr" class="section level2">
 <h2>Install languagelayerR</h2>
 <p>Install this package directly in R :</p>
 <p>From CRAN :</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;languagelayeR&quot;</span>)</a></code></pre></div>
 <p>From Github :</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;ColinFay/languagelayeR&quot;</span>)</a></code></pre></div>
-</section>
-<section id="how-languagelayer-works" class="level2">
+</div>
+<div id="how-languagelayer-works" class="section level2">
 <h2>How languagelayeR works</h2>
 <p>The version 1.1.0 works with two functions. Which are :<br />
 pkgdown::build_site(path = “inst/”)</p>
@@ -307,29 +307,29 @@ pkgdown::build_site(path = “inst/”)</p>
 <li><p><code>get_lang</code> Get language information from a character string</p></li>
 <li><p><code>get_supported_lang</code> Get all current accessible languages on the languagelayer API</p></li>
 </ul>
-</section>
-<section id="first-of-all" class="level2">
+</div>
+<div id="first-of-all" class="section level2">
 <h2>First of all</h2>
 <p>Before any request on the languagelayer, you need to get your API key from your language layer <a href="https://languagelayer.com/dashboard">dashboard</a>.</p>
-</section>
-<section id="examples" class="level2">
+</div>
+<div id="examples" class="section level2">
 <h2>Examples</h2>
-<section id="getlanguage" class="level3">
+<div id="getlanguage" class="section level3">
 <h3>getLanguage</h3>
 <p>Detect a language from a character string.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">get_lang</span>(<span class="dt">query =</span> <span class="st">&quot;I really really love R and that's a good thing, right?&quot;</span>, <span class="dt">api_key =</span> <span class="st">&quot;your_api_key&quot;</span>)</a></code></pre></div>
-</section>
-<section id="getsupportedlanguage" class="level3">
+</div>
+<div id="getsupportedlanguage" class="section level3">
 <h3>getSupportedLanguage</h3>
 <p>List all the languages available on the languagelayer API.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">get_supported_lang</span>(<span class="dt">api_key =</span> <span class="st">&quot;your_api_key&quot;</span>)</a></code></pre></div>
-</section>
-<section id="contact" class="level3">
+</div>
+<div id="contact" class="section level3">
 <h3>Contact</h3>
 <p>Questions and feedbacks <a href="mailto:contact@colinfay.me">welcome</a>!</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
 
