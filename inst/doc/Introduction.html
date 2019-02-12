@@ -12,7 +12,7 @@
 
 <meta name="author" content="Colin FAY" />
 
-<meta name="date" content="2018-01-26" />
+<meta name="date" content="2019-02-12" />
 
 <title>Introduction to languagelayeR</title>
 
@@ -22,7 +22,7 @@
 <style type="text/css">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -35,13 +35,11 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
+  { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -280,7 +278,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">Introduction to languagelayeR</h1>
 <h4 class="author"><em>Colin FAY</em></h4>
-<h4 class="date"><em>2018-01-26</em></h4>
+<h4 class="date"><em>2019-02-12</em></h4>
 
 
 
@@ -295,13 +293,13 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <h2>Install languagelayerR</h2>
 <p>Install this package directly in R :</p>
 <p>From CRAN :</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;languagelayeR&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;languagelayeR&quot;</span>)</a></code></pre></div>
 <p>From Github :</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;ColinFay/languagelayeR&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;ColinFay/languagelayeR&quot;</span>)</a></code></pre></div>
 </div>
 <div id="how-languagelayer-works" class="section level2">
 <h2>How languagelayeR works</h2>
-<p>The version 1.1.0 works with two functions. Which are :<br />
+<p>The version 1.1.0 and further works with two functions. Which are :<br />
 pkgdown::build_site(path = “inst/”)</p>
 <ul>
 <li><p><code>get_lang</code> Get language information from a character string</p></li>
@@ -317,12 +315,12 @@ pkgdown::build_site(path = “inst/”)</p>
 <div id="getlanguage" class="section level3">
 <h3>getLanguage</h3>
 <p>Detect a language from a character string.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">get_lang</span>(<span class="dt">query =</span> <span class="st">&quot;I really really love R and that's a good thing, right?&quot;</span>, <span class="dt">api_key =</span> <span class="st">&quot;your_api_key&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">get_lang</span>(<span class="dt">query =</span> <span class="st">&quot;I really really love R and that&#39;s a good thing, right?&quot;</span>, <span class="dt">api_key =</span> <span class="st">&quot;your_api_key&quot;</span>)</a></code></pre></div>
 </div>
 <div id="getsupportedlanguage" class="section level3">
 <h3>getSupportedLanguage</h3>
 <p>List all the languages available on the languagelayer API.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">get_supported_lang</span>(<span class="dt">api_key =</span> <span class="st">&quot;your_api_key&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">get_supported_lang</span>(<span class="dt">api_key =</span> <span class="st">&quot;your_api_key&quot;</span>)</a></code></pre></div>
 </div>
 <div id="contact" class="section level3">
 <h3>Contact</h3>
